@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Data Engineer & AI Student looking for internship">
+    <title>Portfolio | Data & AI Engineering</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Ton<span>Nom</span>_</div>
+    <nav>
+        <ul>
+            <li><a href="#about" data-en="01. About">01. À propos</a></li>
+            <li><a href="#work" data-en="02. Projects">02. Projets</a></li>
+            <li><a href="#notes" data-en="03. Notes">03. Notes</a></li>
+            <li class="lang-switch" id="lang-toggle-btn">
+                <span id="fr-btn" class="active">FR</span> / <span id="en-btn">EN</span>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <span class="hero-pre" data-en="Hi, my name is">Bonjour, je suis</span>
+        <h1 data-en="Data Engineer & AI Student.">Ingénieur Big Data & IA.</h1>
+        <p data-en="I build scalable data pipelines and machine learning models. Currently looking for a 6-month internship abroad starting 2025.">
+            Je conçois des pipelines de données et des modèles de Machine Learning. Actuellement à la recherche d'un
+            stage de fin d'études de 6 mois à l'international (2025).
+        </p>
+        <a href="assets/docs/CV_Mesnel-Terreau_Quentin.pdf" target="_blank" class="cta-button" data-en="Download Resume">Télécharger mon CV</a>
+    </section>
+
+    <div class="stack-bar">
+        <div class="stack-track">
+            <span class="stack-item">PYTHON</span>
+            <span class="stack-item">PYTORCH</span>
+            <span class="stack-item">SQL</span>
+            <span class="stack-item">DOCKER</span>
+            <span class="stack-item">KUBERNETES</span>
+            <span class="stack-item">SPARK</span>
+            <span class="stack-item">AWS</span>
+            <span class="stack-item">GIT</span>
+            <span class="stack-item">PYTHON</span>
+            <span class="stack-item">PYTORCH</span>
+            <span class="stack-item">SQL</span>
+            <span class="stack-item">DOCKER</span>
+            <span class="stack-item">KUBERNETES</span>
+            <span class="stack-item">SPARK</span>
+            <span class="stack-item">AWS</span>
+            <span class="stack-item">GIT</span>
+        </div>
+    </div>
+
+    <section id="about" class="section-container">
+        <div class="section-header">
+            <span class="section-num">01.</span>
+            <h2 class="section-title" data-en="About Me">À propos</h2>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-text">
+                <p data-en="I am an Engineering Student specializing in Data Science. I enjoy solving complex problems using data.">
+                    Je suis étudiant en École d'Ingénieur, spécialisé en Data Science. J'aime résoudre des problèmes
+                    complexes grâce à la donnée.
+                </p>
+                <br>
+                <p data-en="My focus is on Data Engineering (ETL, Cloud) and Computer Vision.">
+                    Je me concentre principalement sur le Data Engineering (ETL, Cloud) et la Vision par Ordinateur.
+                </p>
+
+                <div class="github-widget">
+                    <p class="terminal-text">> git commit -m "Activity"</p>
+                    <img src="https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=dark&bg_color=1A1A1E&hide_border=true&title_color=64FFDA&icon_color=64FFDA&text_color=A0A0A0"
+                         alt="Github Stats">
+                </div>
+            </div>
+
+            <div class="timeline">
+                <h3 class="timeline-title" data-en="Journey">Mon Parcours</h3>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot active"></div>
+                    <span class="timeline-date">2024 - 2025</span>
+                    <h4 data-en="Engineering Degree (Master)">Diplôme d'Ingénieur</h4>
+                    <p data-en="Major in Big Data & AI.">Spécialisation Big Data & IA.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">Été 2023</span>
+                    <h4 data-en="Data Scientist Intern">Stage Data Scientist</h4>
+                    <p data-en="Developed predictive models at Company X.">Développement de modèles prédictifs chez
+                        Entreprise X.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2021 - 2023</span>
+                    <h4 data-en="Preparatory Classes">Classes Préparatoires</h4>
+                    <p data-en="Mathematics & Physics intensive course.">Mathématiques et Physique (MPSI/MP).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="section-container">
+        <div class="section-header">
+            <span class="section-num">02.</span>
+            <h2 class="section-title" data-en="Featured Projects">Projets Réalisés</h2>
+        </div>
+
+        <div class="grid">
+
+            <a href="https://github.com/ton-profil" target="_blank" class="project-card">
+                <div class="card-top">
+                    <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <span class="github-link">↗</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="project-title" data-en="Computer Vision Analysis">Détection d'Objets par IA</h3>
+                    <p class="project-desc"
+                       data-en="Developed a YOLOv8 model to detect defects in manufacturing parts. Optimized inference time by 40%.">
+                        Développement d'un modèle YOLOv8 pour détecter des défauts sur des pièces industrielles.
+                        Optimisation du temps d'inférence de 40%.
+                    </p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>PyTorch</span>
+                        <span>OpenCV</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="project-card">
+                <div class="card-top">
+                    <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <span class="github-link">↗</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="project-title" data-en="ETL Pipeline Automation">Pipeline ETL Automatisé</h3>
+                    <p class="project-desc"
+                       data-en="Built a data pipeline scraping real-time financial data, cleaning it with Pandas and storing it in PostgreSQL.">
+                        Création d'un pipeline de données scrapant des données financières en temps réel, nettoyées avec
+                        Pandas et stockées sur PostgreSQL.
+                    </p>
+                    <div class="tech-stack">
+                        <span>Pandas</span>
+                        <span>Docker</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="project-card">
+                <div class="card-top">
+                    <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <span class="github-link">↗</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="project-title" data-en="Sentiment Analysis API">API d'Analyse de Sentiment</h3>
+                    <p class="project-desc"
+                       data-en="Fine-tuned a BERT model to analyze customer reviews. Deployed via FastAPI on AWS.">
+                        Fine-tuning d'un modèle BERT pour analyser des avis clients. Déploiement via une API FastAPI sur
+                        AWS.
+                    </p>
+                    <div class="tech-stack">
+                        <span>HuggingFace</span>
+                        <span>FastAPI</span>
+                        <span>AWS</span>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section id="notes" class="section-container">
+        <div class="section-header">
+            <span class="section-num">03.</span>
+            <h2 class="section-title" data-en="Engineering Notes">Notes Techniques</h2>
+        </div>
+
+        <div class="notes-grid">
+            <a href="#" class="note-card">
+                <div class="note-content">
+                    <h4 data-en="Understanding Transformers">Comprendre l'architecture Transformer</h4>
+                    <p data-en="A deep dive into the Self-Attention mechanism.">Une plongée dans le mécanisme de
+                        Self-Attention.</p>
+                </div>
+                <span class="read-more">Read →</span>
+            </a>
+
+            <a href="#" class="note-card">
+                <div class="note-content">
+                    <h4 data-en="Optimizing SQL Queries">Optimiser les requêtes SQL</h4>
+                    <p data-en="Best practices for handling large datasets.">Bonnes pratiques pour gérer les gros
+                        volumes de données.</p>
+                </div>
+                <span class="read-more">Read →</span>
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p data-en="Designed & Built by Your Name.">&copy; 2024 Design & Code par Ton Nom.</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
