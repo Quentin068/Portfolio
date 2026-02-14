@@ -5,6 +5,15 @@
     <!-- Basic meta tags for character set, viewport, and SEO. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+      Base Href:
+      This tag specifies the base URL for all relative URLs in the document.
+      It's crucial for deployments in a subdirectory like on GitHub Pages.
+      The path MUST start and end with a forward slash.
+    -->
+    <base href="/Portfolio/">
+
     <meta name="description"
           content="Portfolio of a Data Engineer & AI Student looking for an international internship.">
     <title>Portfolio | Big Data & AI Engineering</title>
@@ -16,7 +25,7 @@
           rel="stylesheet">
 
     <!-- Main stylesheet that imports all other CSS partials. -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
@@ -41,7 +50,7 @@
             Étudiant en 1ère année d'école d'ingénieur, en alternance Data Analyst depuis Septembre 2022. Je suis
             actuellement à la recherche d'un stage de 9 à 12 semaines à l'international à partir de Juin 2027.
         </p>
-        <a href="./assets/docs/CV_Mesnel-Terreau_Quentin.pdf" target="_blank" class="cta-button"
+        <a href="assets/docs/CV_Mesnel-Terreau_Quentin.pdf" target="_blank" class="cta-button"
            data-en="Download Resume">Télécharger mon CV</a>
     </section>
 
@@ -354,7 +363,7 @@
     Main JavaScript file.
     `type="module"` allows the use of ES6 import/export syntax.
 -->
-<script src="./assets/js/main.js" type="module"></script>
+<script src="assets/js/main.js" type="module"></script>
 
 </body>
 </html>
