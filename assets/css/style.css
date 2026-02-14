@@ -13,11 +13,13 @@
     --font-code: 'Fira Code', monospace;
     --max-width: 1100px;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: var(--bg-color);
     color: var(--text-main);
@@ -25,6 +27,7 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 }
+
 body::before {
     content: '';
     position: fixed;
@@ -36,9 +39,11 @@ body::before {
     z-index: -1;
     pointer-events: none;
 }
+
 h1, h2, h3, h4 {
     color: var(--text-main);
 }
+
 a {
     text-decoration: none;
     color: inherit;
@@ -58,29 +63,35 @@ header {
     max-width: var(--max-width);
     margin: 0 auto;
 }
+
 .logo {
     font-family: var(--font-code);
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--accent-color);
 }
+
 .logo span {
     color: #fff;
 }
+
 nav ul {
     list-style: none;
     display: flex;
     gap: 2rem;
     align-items: center;
 }
+
 nav a {
     font-size: 0.85rem;
     font-family: var(--font-code);
     color: var(--text-secondary);
 }
+
 nav a:hover {
     color: var(--accent-color);
 }
+
 .lang-switch {
     font-family: var(--font-code);
     font-size: 0.8rem;
@@ -90,6 +101,7 @@ nav a:hover {
     border-radius: 4px;
     color: var(--text-secondary);
 }
+
 .lang-switch span.active {
     color: var(--accent-color);
     font-weight: bold;
@@ -107,11 +119,13 @@ nav a:hover {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     margin-top: 0;
 }
+
 .footer-cta h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #fff;
 }
+
 .footer-cta p {
     color: var(--text-secondary);
     margin-bottom: 3rem;
@@ -119,6 +133,7 @@ nav a:hover {
     margin-left: auto;
     margin-right: auto;
 }
+
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding-top: 2rem;
@@ -129,19 +144,23 @@ nav a:hover {
     max-width: var(--max-width);
     margin: 0 auto;
 }
+
 .social-links a {
     margin: 0 10px;
     font-family: var(--font-code);
     font-size: 0.9rem;
     color: var(--text-secondary);
 }
+
 .social-links a:hover {
     color: var(--accent-color);
 }
+
 .copyright {
     font-size: 0.8rem;
     opacity: 0.5;
 }
+
 #skills {
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
@@ -161,9 +180,11 @@ nav a:hover {
     border-radius: 4px;
     transition: background-color 0.3s;
 }
+
 .cta-button:hover {
     background-color: rgba(100, 255, 218, 0.1);
 }
+
 .git-btn {
     display: inline-block;
     margin-top: 1rem;
@@ -171,10 +192,12 @@ nav a:hover {
     border-bottom: 1px dashed var(--accent-color);
     font-size: 0.85rem;
 }
+
 .git-btn:hover {
     color: #fff;
     border-color: #fff;
 }
+
 .big-contact-btn {
     display: inline-block;
     padding: 1rem 3rem;
@@ -186,6 +209,7 @@ nav a:hover {
     margin-bottom: 5rem;
     transition: background-color 0.3s, transform 0.3s;
 }
+
 .big-contact-btn:hover {
     background-color: rgba(100, 255, 218, 0.1);
     transform: scale(1.05);
@@ -201,6 +225,7 @@ nav a:hover {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.5rem;
 }
+
 .project-card {
     background-color: var(--card-bg);
     border-radius: 4px;
@@ -210,39 +235,47 @@ nav a:hover {
     height: 100%;
     transition: transform 0.25s ease;
 }
+
 .project-card:hover {
     transform: translateY(-7px);
 }
+
 .card-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
 }
+
 .folder-icon {
     color: var(--accent-color);
     width: 40px;
     height: 40px;
 }
+
 .github-link {
     color: var(--text-secondary);
     font-size: 1.2rem;
 }
+
 .github-link:hover {
     color: var(--accent-color);
 }
+
 .project-title {
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 0.8rem;
     color: #e6f1ff;
 }
+
 .project-desc {
     font-size: 0.9rem;
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
     flex-grow: 1;
 }
+
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
@@ -251,6 +284,7 @@ nav a:hover {
     font-size: 0.75rem;
     color: var(--text-secondary);
 }
+
 .github-code-card {
     background-color: #1A1A1E;
     border: 1px solid rgba(255, 255, 255, 0.05);
@@ -261,42 +295,71 @@ nav a:hover {
     font-size: 0.9rem;
     box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.5);
 }
+
 .code-header {
     display: flex;
     gap: 8px;
     margin-bottom: 1.5rem;
 }
+
 .dot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
 }
-.dot.red { background-color: #FF5F56; }
-.dot.yellow { background-color: #FFBD2E; }
-.dot.green { background-color: #27C93F; }
+
+.dot.red {
+    background-color: #FF5F56;
+}
+
+.dot.yellow {
+    background-color: #FFBD2E;
+}
+
+.dot.green {
+    background-color: #27C93F;
+}
+
 .code-content p {
     margin: 0;
     line-height: 1.6;
     color: var(--text-secondary);
 }
+
 .code-content .indent {
     padding-left: 1.5rem;
 }
-.keyword { color: #C792EA; font-style: italic; }
-.var { color: #82AAFF; }
-.string { color: #C3E88D; }
-.number { color: #F78C6C; }
+
+.keyword {
+    color: #C792EA;
+    font-style: italic;
+}
+
+.var {
+    color: #82AAFF;
+}
+
+.string {
+    color: #C3E88D;
+}
+
+.number {
+    color: #F78C6C;
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
+
 .skill-card {
     background-color: var(--card-bg);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     padding: 2rem;
 }
+
 .skill-title {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
@@ -321,12 +384,14 @@ nav a:hover {
     z-index: 9999;
     padding: 2rem;
 }
+
 .terminal-window {
     max-width: 800px;
     margin: 10% auto;
     font-family: var(--font-code);
     color: var(--accent-color);
 }
+
 .terminal-header {
     border-bottom: 1px solid #333;
     padding-bottom: 1rem;
@@ -334,13 +399,16 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
 }
+
 .close-term {
     cursor: pointer;
     color: #fff;
 }
+
 .blink {
     animation: blinker 1s linear infinite;
 }
+
 @keyframes blinker {
     50% {
         opacity: 0;
@@ -357,12 +425,14 @@ nav a:hover {
     margin: 0 auto;
     padding: 8rem 2rem 6rem;
 }
+
 .hero-pre {
     font-family: var(--font-code);
     color: var(--accent-color);
     display: block;
     margin-bottom: 1rem;
 }
+
 .hero-name {
     font-size: clamp(3rem, 6vw, 5rem);
     line-height: 1.1;
@@ -370,18 +440,21 @@ nav a:hover {
     margin-bottom: 1rem;
     color: #ccd6f6;
 }
+
 .hero-subtitle {
     font-size: clamp(2rem, 4vw, 3.5rem);
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
     font-weight: 600;
 }
+
 .hero p {
     font-size: 1.1rem;
     color: var(--text-secondary);
     max-width: 600px;
     margin-bottom: 3rem;
 }
+
 .stack-bar {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -390,10 +463,12 @@ nav a:hover {
     overflow: hidden;
     white-space: nowrap;
 }
+
 .stack-track {
     display: inline-block;
     animation: scroll 25s linear infinite;
 }
+
 .stack-item {
     font-family: var(--font-code);
     color: var(--text-secondary);
@@ -401,6 +476,7 @@ nav a:hover {
     font-size: 0.9rem;
     font-weight: 500;
 }
+
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -409,48 +485,57 @@ nav a:hover {
         transform: translateX(-50%);
     }
 }
+
 .section-container {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 2rem 8rem;
 }
+
 .section-header {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-bottom: 3rem;
 }
+
 .section-num {
     font-family: var(--font-code);
     color: var(--accent-color);
     font-size: 1.2rem;
 }
+
 .section-title {
     font-size: 1.5rem;
     font-weight: 700;
     color: #ccd6f6;
 }
+
 .about-grid {
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 4rem;
 }
+
 .about-text p {
     color: var(--text-secondary);
     margin-bottom: 1rem;
 }
+
 .timeline-title {
     font-family: var(--font-code);
     font-size: 1rem;
     color: var(--text-main);
     margin-bottom: 1.5rem;
 }
+
 .timeline-item {
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     padding-left: 1.5rem;
     margin-bottom: 2rem;
     position: relative;
 }
+
 .timeline-dot {
     position: absolute;
     left: -5px;
@@ -460,10 +545,12 @@ nav a:hover {
     background: #333;
     border-radius: 50%;
 }
+
 .timeline-dot.active {
     background: var(--accent-color);
     box-shadow: 0 0 10px rgba(100, 255, 218, 0.4);
 }
+
 .timeline-date {
     font-family: var(--font-code);
     color: var(--accent-color);
@@ -471,32 +558,39 @@ nav a:hover {
     display: block;
     margin-bottom: 0.5rem;
 }
+
 .timeline-item h4 {
     font-size: 1rem;
     margin-bottom: 0.2rem;
 }
+
 .timeline-item p {
     font-size: 0.85rem;
     color: var(--text-secondary);
 }
+
 .language-item {
     margin-bottom: 1.5rem;
 }
+
 .lang-info {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
 }
+
 .lang-name {
     color: #fff;
     font-weight: 600;
 }
+
 .lang-level {
     color: var(--text-secondary);
     font-family: var(--font-code);
     font-size: 0.8rem;
 }
+
 .progress-bar {
     width: 100%;
     height: 6px;
@@ -504,16 +598,19 @@ nav a:hover {
     border-radius: 3px;
     overflow: hidden;
 }
+
 .progress {
     height: 100%;
     background: var(--accent-color);
     border-radius: 3px;
 }
+
 .tags-container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
+
 .skill-tag {
     background: rgba(255, 255, 255, 0.05);
     color: var(--text-secondary);
@@ -522,24 +619,30 @@ nav a:hover {
     font-size: 0.85rem;
     border: 1px solid transparent;
 }
+
 .skill-tag.border-blue {
     border-color: rgba(100, 255, 218, 0.3);
     color: var(--accent-color);
 }
+
 @media (max-width: 768px) {
     .about-grid,
     .skills-grid {
         grid-template-columns: 1fr;
     }
+
     .hero {
         padding: 5rem 1.5rem;
     }
+
     .hero-name {
         font-size: 2.5rem;
     }
+
     .hero-subtitle {
         font-size: 1.5rem;
     }
+
     nav ul {
         gap: 1rem;
     }
