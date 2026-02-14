@@ -11,9 +11,8 @@ function includeHTML() {
 
     includeElements.forEach(el => {
         // Construct the file path from the element's ID.
-        // e.g., "header-placeholder" becomes "includes/_header.html".
-        // The <base> tag in index.html will handle the full path.
-        const file = `includes/_${el.id.replace('-placeholder', '')}.html`;
+        // e.g., "header-placeholder" becomes "./includes/_header.html".
+        const file = `./includes/_${el.id.replace('-placeholder', '')}.html`;
 
         // Fetch the HTML content. This is an asynchronous operation.
         const promise = fetch(file)
