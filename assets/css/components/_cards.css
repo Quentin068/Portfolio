@@ -1,0 +1,171 @@
+/**
+ * ==========================================================================
+ *   Component: Cards
+ * ==========================================================================
+ *
+ * Styles for various card-like elements, including project cards,
+ * the decorative GitHub code card, and skill cards.
+ *
+ */
+
+/* --- Project Cards --- */
+
+/* Grid container for the project cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background-color: var(--card-bg);
+    border-radius: 4px;
+    padding: 1rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-7px); /* Subtle lift effect on hover */
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.folder-icon {
+    color: var(--accent-color);
+    width: 40px;
+    height: 40px;
+}
+
+.github-link {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+.github-link:hover {
+    color: var(--accent-color);
+}
+
+.project-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: #e6f1ff;
+}
+
+.project-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    flex-grow: 1; /* Ensures the card footer aligns at the bottom */
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-family: var(--font-code);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+
+/* --- GitHub Code Card (Decorative) --- */
+.github-code-card {
+    background-color: #1A1A1E;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-family: var(--font-code);
+    font-size: 0.9rem;
+    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.5);
+}
+
+.code-header {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+}
+
+/* macOS-style window control dots */
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dot.red {
+    background-color: #FF5F56;
+}
+
+.dot.yellow {
+    background-color: #FFBD2E;
+}
+
+.dot.green {
+    background-color: #27C93F;
+}
+
+.code-content p {
+    margin: 0;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.code-content .indent {
+    padding-left: 1.5rem;
+}
+
+/* Syntax highlighting simulation */
+.keyword {
+    color: #C792EA;
+    font-style: italic;
+}
+
+/* Purple */
+.var {
+    color: #82AAFF;
+}
+
+/* Blue */
+.string {
+    color: #C3E88D;
+}
+
+/* Light Green */
+.number {
+    color: #F78C6C;
+}
+
+/* Orange */
+
+
+/* --- Skill Cards --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.skill-card {
+    background-color: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.skill-title {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-main);
+    border-left: 3px solid var(--accent-color);
+    padding-left: 10px;
+}

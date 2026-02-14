@@ -1,0 +1,67 @@
+/**
+ * ==========================================================================
+ *   Base: Reset, Variables, and Global Styles
+ * ==========================================================================
+ *
+ * This file contains:
+ * 1. CSS Custom Properties (Variables) for consistent theming (colors, fonts).
+ * 2. A simple CSS reset to remove default browser styling.
+ * 3. Base styles for common HTML elements like `body`, `a`, and headings.
+ *
+ */
+
+/* 1. CSS Custom Properties (Variables) */
+:root {
+    /* Colors */
+    --bg-color: #0F0F11; /* Obsidian Black */
+    --card-bg: #1A1A1E;
+    --text-main: #E6F1FF;
+    --text-secondary: #8892b0;
+    --accent-color: #64FFDA; /* Cyber Green */
+
+    /* Fonts */
+    --font-main: 'Inter', sans-serif;
+    --font-code: 'Fira Code', monospace;
+
+    /* Layout */
+    --max-width: 1100px;
+}
+
+/* 2. CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 3. Base Styles */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+/* Subtle background glow effect */
+body::before {
+    content: '';
+    position: fixed;
+    top: -20%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(100, 255, 218, 0.04) 0%, rgba(0, 0, 0, 0) 70%);
+    z-index: -1;
+    pointer-events: none; /* Allows clicking through the element */
+}
+
+h1, h2, h3, h4 {
+    color: var(--text-main);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}

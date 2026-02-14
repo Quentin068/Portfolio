@@ -1,0 +1,253 @@
+/**
+ * ==========================================================================
+ *   Page: Home
+ * ==========================================================================
+ *
+ * Contains all specific styles for the main page of the portfolio,
+ * including the hero section, scrolling tech stack, sections, timeline,
+ * and responsive adjustments.
+ *
+ */
+
+/* --- Hero Section --- */
+.hero {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 8rem 2rem 6rem;
+}
+
+.hero-pre {
+    font-family: var(--font-code);
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.hero-name {
+    /* Responsive font size using clamp() */
+    font-size: clamp(3rem, 6vw, 5rem);
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ccd6f6;
+}
+
+.hero-subtitle {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin-bottom: 3rem;
+}
+
+
+/* --- Scrolling Tech Stack --- */
+.stack-bar {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 1.5rem 0;
+    margin-bottom: 6rem;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.stack-track {
+    display: inline-block;
+    animation: scroll 25s linear infinite;
+}
+
+.stack-item {
+    font-family: var(--font-code);
+    color: var(--text-secondary);
+    margin: 0 2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* The track is duplicated in HTML, so we only need to move it by 50% */
+        transform: translateX(-50%);
+    }
+}
+
+
+/* --- General Section Styles --- */
+.section-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem 8rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.section-num {
+    font-family: var(--font-code);
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ccd6f6;
+}
+
+
+/* --- About Section & Timeline --- */
+.about-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 4rem;
+}
+
+.about-text p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+/* Timeline */
+.timeline-title {
+    font-family: var(--font-code);
+    font-size: 1rem;
+    color: var(--text-main);
+    margin-bottom: 1.5rem;
+}
+
+.timeline-item {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -5px; /* Aligns the dot on the border */
+    top: 5px;
+    width: 9px;
+    height: 9px;
+    background: #333;
+    border-radius: 50%;
+}
+
+.timeline-dot.active {
+    background: var(--accent-color);
+    box-shadow: 0 0 10px rgba(100, 255, 218, 0.4);
+}
+
+.timeline-date {
+    font-family: var(--font-code);
+    color: var(--accent-color);
+    font-size: 0.75rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-item h4 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.timeline-item p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+
+/* --- Skills Section: Languages & Tags --- */
+.language-item {
+    margin-bottom: 1.5rem;
+}
+
+.lang-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.lang-name {
+    color: #fff;
+    font-weight: 600;
+}
+
+.lang-level {
+    color: var(--text-secondary);
+    font-family: var(--font-code);
+    font-size: 0.8rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background: #333;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: var(--accent-color);
+    border-radius: 3px;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-secondary);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    border: 1px solid transparent;
+}
+
+.skill-tag.border-blue {
+    border-color: rgba(100, 255, 218, 0.3);
+    color: var(--accent-color);
+}
+
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    /* Stack grids vertically on smaller screens */
+    .about-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 5rem 1.5rem;
+    }
+
+    .hero-name {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+}

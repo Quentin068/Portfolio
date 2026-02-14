@@ -1,0 +1,55 @@
+/**
+ * ==========================================================================
+ *   Component: Buttons
+ * ==========================================================================
+ *
+ * Contains styles for all button variants used throughout the site.
+ *
+ */
+
+/* Primary Call-to-Action button (e.g., "Download Resume") */
+.cta-button {
+    padding: 14px 28px;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    font-family: var(--font-code);
+    font-size: 0.9rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+}
+
+/* Inline link styled as a button (e.g., "View my GitHub") */
+.git-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--accent-color);
+    border-bottom: 1px dashed var(--accent-color);
+    font-size: 0.85rem;
+}
+
+.git-btn:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+/* A larger button variant, used in the footer CTA. */
+.big-contact-btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    font-family: var(--font-code);
+    font-size: 1.2rem;
+    border-radius: 4px;
+    margin-bottom: 5rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.big-contact-btn:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+    transform: scale(1.05);
+}

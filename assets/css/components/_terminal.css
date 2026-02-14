@@ -1,0 +1,53 @@
+/**
+ * ==========================================================================
+ *   Component: Terminal Modal
+ * ==========================================================================
+ *
+ * Styles for the hidden terminal easter egg.
+ *
+ */
+
+/* The main modal container, hidden by default. */
+#terminal-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 15, 17, 0.95); /* Semi-transparent background */
+    z-index: 9999; /* Ensures it's on top of everything */
+    padding: 2rem;
+}
+
+/* The actual terminal window */
+.terminal-window {
+    max-width: 800px;
+    margin: 10% auto;
+    font-family: var(--font-code);
+    color: var(--accent-color);
+}
+
+.terminal-header {
+    border-bottom: 1px solid #333;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.close-term {
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Blinking cursor effect */
+.blink {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}

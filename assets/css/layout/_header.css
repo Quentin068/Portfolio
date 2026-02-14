@@ -1,0 +1,63 @@
+/**
+ * ==========================================================================
+ *   Layout: Header
+ * ==========================================================================
+ *
+ * Styles for the main site header, including the logo, navigation,
+ * and language switcher.
+ *
+ */
+
+header {
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: 0 auto; /* Center the header within the page */
+}
+
+.logo {
+    font-family: var(--font-code);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.logo span {
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+nav a {
+    font-size: 0.85rem;
+    font-family: var(--font-code);
+    color: var(--text-secondary);
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Language switcher button */
+.lang-switch {
+    font-family: var(--font-code);
+    font-size: 0.8rem;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: var(--text-secondary);
+}
+
+/* Style for the currently active language */
+.lang-switch span.active {
+    color: var(--accent-color);
+    font-weight: bold;
+}
