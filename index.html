@@ -1,55 +1,54 @@
 <!DOCTYPE html>
+<!-- The `lang` attribute is dynamically updated by the language switcher script. -->
 <html lang="fr">
 <head>
+    <!-- Basic meta tags for character set, viewport, and SEO. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio Data Engineer & AI Student looking for internship">
+    <meta name="description"
+          content="Portfolio of a Data Engineer & AI Student looking for an international internship.">
     <title>Portfolio | Big Data & AI Engineering</title>
 
+    <!-- Google Fonts preconnect and stylesheet links. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;600;700&display=swap"
           rel="stylesheet">
 
+    <!-- Main stylesheet that imports all other CSS partials. -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<header>
-    <div class="logo"><span>Quentin</span>_</div>
-    <nav>
-        <ul>
-            <li><a href="#about" data-en="01. About">01. À propos</a></li>
-            <li><a href="#work" data-en="02. Projects">02. Projets</a></li>
-            <li><a href="#skills" data-en="03. Skills">03. Compétences</a></li>
-            <li class="lang-switch" id="lang-toggle-btn">
-                <span id="fr-btn" class="active">FR</span> / <span id="en-btn">EN</span>
-            </li>
-        </ul>
-    </nav>
-</header>
+<!--
+    Header Placeholder:
+    The content for the header is dynamically loaded from '/includes/_header.html'
+    by the 'include.js' script. This keeps the main HTML file clean.
+-->
+<div id="header-placeholder"></div>
 
+<!-- Main content of the page -->
 <main>
 
+    <!-- Hero Section: The main introduction block. -->
     <section class="hero">
         <span class="hero-pre" data-en="Hi, my name is">Bonjour, je suis</span>
-
         <h1 class="hero-name">Quentin Mesnel-Terreau.</h1>
-
         <h2 class="hero-subtitle" data-en="Engineering Student & Data Analyst.">
             Étudiant Ingénieur & Data Analyst.
         </h2>
-
         <p data-en="First-year Engineering Student and Work-study Data Analyst since Sept. 2022. I am currently looking for a 9 to 12-week international internship starting June 2027.">
             Étudiant en 1ère année d'école d'ingénieur, en alternance Data Analyst depuis Septembre 2022. Je suis
             actuellement à la recherche d'un stage de 9 à 12 semaines à l'international à partir de Juin 2027.
         </p>
-
-        <a href="assets/docs/cv.pdf" target="_blank" class="cta-button" data-en="Download Resume">Télécharger mon CV</a>
+        <a href="assets/docs/CV_Mesnel-Terreau_Quentin.pdf" target="_blank" class="cta-button"
+           data-en="Download Resume">Télécharger mon CV</a>
     </section>
 
+    <!-- Scrolling Tech Stack Bar: An infinite scrolling animation. -->
     <div class="stack-bar">
         <div class="stack-track">
+            <!-- Items are duplicated to create a seamless loop effect. -->
             <span class="stack-item">PYTHON</span>
             <span class="stack-item">JAVA</span>
             <span class="stack-item">C</span>
@@ -60,7 +59,6 @@
             <span class="stack-item">SQL / NO-SQL</span>
             <span class="stack-item">DOCKER</span>
             <span class="stack-item">GIT</span>
-
             <span class="stack-item">PYTHON</span>
             <span class="stack-item">JAVA</span>
             <span class="stack-item">C</span>
@@ -74,12 +72,12 @@
         </div>
     </div>
 
+    <!-- About Section: Contains personal description and timeline. -->
     <section id="about" class="section-container">
         <div class="section-header">
             <span class="section-num">01.</span>
             <h2 class="section-title" data-en="About Me">À propos</h2>
         </div>
-
         <div class="about-grid">
             <div class="about-text">
                 <p data-en="I am an Engineering Student specializing in Data Science. I enjoy solving complex problems using data.">
@@ -91,7 +89,7 @@
                     Je me concentre principalement sur le Data Engineering et la Vision par Ordinateur. J'utilise
                     également Power BI pour transformer la donnée brute en solutions décisionnelles concrètes.
                 </p>
-
+                <!-- GitHub Info Card: A decorative card mimicking a code editor. -->
                 <div class="github-code-card">
                     <div class="code-header">
                         <span class="dot red"></span>
@@ -103,30 +101,22 @@
                         <p class="indent">user: <span class="string">"Quentin068"</span>,</p>
                         <p class="indent">repositories: <span class="number">12</span>,</p>
                         <p class="indent">commits: <span class="number">450+</span>,</p>
-                        <p class="indent">main_tools:
-                            [
-                            <span class="string">'Python'</span>,
-                            <span class="string">'Java'</span>
-                            <span class="string">'JS'</span>
-                            <span class="string">'HTML'</span>
-                            <span class="string">'CSS'</span>
-                            <span class="string">'C'</span>
-                            <span class="string">'C++'</span>
-                            ]
-                        </p>
+                        <p class="indent">main_tools: [<span class="string">'Python'</span>, <span
+                                class="string">'Java'</span>, <span class="string">'JS'</span>, <span class="string">'HTML'</span>,
+                            <span class="string">'CSS'</span>, <span class="string">'C/C++'</span>]</p>
                         <p>};</p>
                         <br>
                         <a href="https://github.com/Quentin068" target="_blank" class="git-btn">Voir mon GitHub ↗</a>
                     </div>
                 </div>
             </div>
-
+            <!-- Timeline: Displays education and work experience. -->
             <div class="timeline">
                 <h3 class="timeline-title" data-en="Experience & Education">Parcours & Expérience</h3>
 
                 <div class="timeline-item">
                     <div class="timeline-dot active"></div>
-                    <span class="timeline-date">Sept. 2022 - Présent (En poste)</span>
+                    <span class="timeline-date">Sept. 2022 - Present</span>
 
                     <h4 data-en="Data Analyst (Apprenticeship)">Data Analyst (Alternance)</h4>
 
@@ -166,6 +156,7 @@
         </div>
     </section>
 
+    <!-- Work Section: Showcases featured projects. -->
     <section id="work" class="section-container">
         <div class="section-header">
             <span class="section-num">02.</span>
@@ -262,6 +253,7 @@
         </div>
     </section>
 
+    <!-- Skills Section: Displays languages and soft skills. -->
     <section id="skills" class="section-container">
         <div class="section-header">
             <span class="section-num">03.</span>
@@ -324,29 +316,24 @@
 
         </div>
     </section>
+
 </main>
 
-<footer class="footer-cta">
-    <h2 data-en="Ready to collaborate?">Prêt à collaborer ?</h2>
-    <p data-en="I am currently open to discussing opportunities for Summer 2027.">
-        Je suis ouvert aux discussions pour l'été 2027.
-    </p>
+<!--
+    Footer Placeholder:
+    The content for the footer is dynamically loaded from '/includes/_footer.html'.
+-->
+<div id="footer-placeholder"></div>
 
-    <div class="footer-bottom">
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/quentin-mesnel-terreau/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/Quentin068" target="_blank">GitHub</a>
-        </div>
-        <p class="copyright" data-en="© 2026 Designed & Built by Quentin Mesnel-Terreau.">© 2026 Design & Code par
-            Quentin Mesnel-Terreau.</p>
-    </div>
-</footer>
-
+<!--
+    Terminal Modal Easter Egg:
+    This element is hidden by default and is toggled by the 'terminal.js' script.
+-->
 <div id="terminal-modal">
     <div class="terminal-window">
         <div class="terminal-header">
             <span>user@portfolio:~$ ./show_skills.sh</span>
-            <span class="close-term" onclick="toggleTerminal()">[X]</span>
+            <span class="close-term">[X]</span>
         </div>
         <div id="terminal-content">
             <p>> Initializing internship search sequence...</p>
@@ -363,7 +350,11 @@
     </div>
 </div>
 
-<script src="assets/js/main.js"></script>
+<!--
+    Main JavaScript file.
+    `type="module"` allows the use of ES6 import/export syntax.
+-->
+<script src="assets/js/main.js" type="module"></script>
 
 </body>
 </html>

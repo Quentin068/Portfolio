@@ -1,0 +1,25 @@
+<!--
+    Reusable Header Component
+    This file is dynamically loaded into the `header-placeholder` div in index.html.
+-->
+<header>
+    <!-- Site Logo -->
+    <div class="logo"><span>Quentin</span>_</div>
+
+    <!-- Main Navigation -->
+    <nav>
+        <ul>
+            <!-- Navigation links that scroll to different sections of the page. -->
+            <!-- The `data-en` attribute holds the English translation for the language switcher. -->
+            <li><a href="#about" data-en="01. About">01. À propos</a></li>
+            <li><a href="#work" data-en="02. Projects">02. Projets</a></li>
+            <li><a href="#skills" data-en="03. Skills">03. Compétences</a></li>
+
+            <!-- Language Switcher Button -->
+            <!-- This element is targeted by the `language.js` script. -->
+            <li class="lang-switch" id="lang-toggle-btn">
+                <span id="fr-btn" class="active">FR</span> / <span id="en-btn">EN</span>
+            </li>
+        </ul>
+    </nav>
+</header>
