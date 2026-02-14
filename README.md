@@ -1,58 +1,58 @@
-# Portfolio de Quentin Mesnel-Terreau
+# Quentin Mesnel-Terreau's Portfolio
 
-Ce projet est le code source de mon portfolio personnel, conçu pour présenter mon parcours, mes compétences et mes projets en tant qu'étudiant ingénieur en Big Data & IA.
+This repository contains the source code for my personal portfolio, designed to showcase my background, skills, and projects as a Big Data & AI engineering student.
 
-Le site est entièrement statique, construit sans aucun framework, en utilisant uniquement HTML, CSS et JavaScript (ES6+).
+The website is fully static, built from scratch without any frameworks, using only HTML, CSS, and JavaScript (ES6+).
 
-## ✨ Fonctionnalités
+## ✨ Features
 
-*   **Design Épuré et Moderne :** Interface sobre avec une attention portée à la typographie et à l'expérience utilisateur.
-*   **Double Langue :** Switcher Français / Anglais pour une audience internationale.
-*   **Terminal Easter Egg :** Appuyez sur la touche 'T' pour découvrir un terminal caché.
-*   **Responsive :** Le site s'adapte à toutes les tailles d'écran, du mobile au bureau.
-*   **Structure Modulaire :** Le code est organisé en composants réutilisables (HTML, CSS, JS) pour une maintenance facile.
+*   **Clean & Modern Design:** A minimalist interface with a focus on typography and user experience.
+*   **Bilingual:** A language switcher (French/English) to cater to an international audience.
+*   **Terminal Easter Egg:** Press the 'T' key to discover a hidden terminal.
+*   **Fully Responsive:** The layout adapts to all screen sizes, from mobile to desktop.
+*   **Modular Structure:** The code is organized into reusable components (HTML, CSS, JS) for easy maintenance.
 
-## 🛠️ Technologies utilisées
+## 🛠️ Tech Stack
 
-*   **HTML**
-*   **CSS :**
-    *   Variables CSS (Custom Properties)
+*   **HTML5**
+*   **CSS3:**
+    *   CSS Custom Properties (Variables)
     *   CSS Grid & Flexbox
     *   Animations
-*   **JavaScript :**
-    *   Modules ES6
+*   **JavaScript (Vanilla JS):**
+    *   ES6 Modules
     *   DOM Manipulation
-    *   Fetch API pour l'inclusion de composants HTML.
+    *   Fetch API for HTML component inclusion.
 
-## 📂 Structure du projet
+## 📂 Project Structure
 
-Le projet est organisé pour être aussi modulaire que possible :
+The project is organized to be as modular as possible:
 
 ```
 /
-├── index.html              # Fichier principal
-├── README.md               # Vous êtes ici
+├── index.html              # Main HTML file
+├── README.md               # You are here
 ├── assets/
 │   ├── css/
-│   │   ├── style.css       # Fichier principal qui importe les autres
-│   │   ├── base/           # Reset, variables, styles globaux
-│   │   ├── components/     # Styles pour les éléments réutilisables (boutons, cartes...)
-│   │   ├── layout/         # Styles pour le header, footer...
-│   │   └── pages/          # Styles spécifiques à une page
+│   │   ├── style.css       # Main file that imports all other stylesheets
+│   │   ├── base/           # Reset, variables, global styles
+│   │   ├── components/     # Styles for reusable elements (buttons, cards...)
+│   │   ├── layout/         # Styles for the header, footer...
+│   │   └── pages/          # Page-specific styles
 │   └── js/
-│       ├── main.js         # Point d'entrée principal du JS
-│       ├── include.js      # Script pour l'inclusion de fichiers HTML
-│       ├── components/     # Scripts pour les composants (terminal, langue...)
-│       └── utils/          # Fonctions utilitaires
+│       ├── main.js         # Main JavaScript entry point
+│       ├── include.js      # Script for HTML file inclusion
+│       ├── components/     # Scripts for components (terminal, language switcher...)
+│       └── utils/          # Utility functions
 └── includes/
-    ├── _header.html        # Contenu du header
-    └── _footer.html        # Contenu du footer
+    ├── _header.html        # Header content
+    └── _footer.html        # Footer content
 ```
 
-## 🚀 Lancement
+## 🚀 Getting Started
 
-Aucune installation n'est requise. Il suffit d'ouvrir le fichier `index.html` dans votre navigateur web préféré.
+No installation is required. Simply open the `index.html` file in your favorite web browser.
 
 ---
 
-_Design & Code par Quentin Mesnel-Terreau._
+_Designed & Coded by Quentin Mesnel-Terreau._
