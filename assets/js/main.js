@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- EASTER EGG (Ouvre la console du navigateur) ---
+    // --- EASTER EGG CONSOLE ---
     console.log(
-        "%c Hello Dev! 👋 \n%c Looking for the source code? It's clean and simple.",
+        "%c Hello Dev! 👋 \n%c Press 'T' to open the Terminal Mode.",
         "color: #64FFDA; font-size: 20px; font-weight: bold;",
         "color: #8892b0; font-size: 12px;"
     );
@@ -13,30 +13,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (toggleBtn) {
         toggleBtn.addEventListener('click', () => {
-            // Bascule FR <-> EN
             currentLang = currentLang === 'fr' ? 'en' : 'fr';
 
-            // Mise à jour visuelle du bouton
             document.getElementById('fr-btn').classList.toggle('active');
             document.getElementById('en-btn').classList.toggle('active');
 
-            // Traduction des éléments
             const elements = document.querySelectorAll('[data-en]');
 
             elements.forEach(el => {
                 if (currentLang === 'en') {
-                    // Sauvegarde du FR si pas encore fait
                     if (!el.dataset.fr) el.dataset.fr = el.innerHTML;
-                    // Injection de l'EN
                     el.innerHTML = el.dataset.en;
                 } else {
-                    // Restauration du FR
                     el.innerHTML = el.dataset.fr;
                 }
             });
-
-            // SEO
             document.documentElement.lang = currentLang;
         });
+    }
+});
+
+// --- EMAIL COPY FUNCTION ---
+function copyEmail() {
+    // Remplace par ton email si besoin
+    const email = "ton.email@lecnam.net";
+    navigator.clipboard.writeText(email).then(() => {
+        alert("Email copié dans le presse-papier !");
+    });
+}
+
+// --- TERMINAL EASTER EGG (Touche 'T') ---
+function toggleTerminal() {
+    const term = document.getElementById('terminal-modal');
+    term.style.display = term.style.display === 'none' ? 'block' : 'none';
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 't' || e.key === 'T') {
+        toggleTerminal();
+    }
+    if (e.key === 'Escape') {
+        document.getElementById('terminal-modal').style.display = 'none';
     }
 });
