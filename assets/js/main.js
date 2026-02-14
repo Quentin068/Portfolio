@@ -1,7 +1,8 @@
 // Import modular scripts for different functionalities.
-import {initializeLanguageSwitcher} from './components/language.js';
-import {initializeTerminal} from './components/terminal.js';
-import {includeHTML} from './include.js';
+import { initializeLanguageSwitcher } from './components/language.js';
+import { initializeTerminal } from './components/terminal.js';
+import { initializeNavigation } from './components/navigation.js';
+import { includeHTML } from './include.js';
 
 /**
  * Main execution block that runs after the DOM is fully loaded.
@@ -12,9 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // This returns a promise to ensure that other scripts depending on this content
     // wait for it to be fully loaded.
     includeHTML().then(() => {
-        // Once the HTML is included, initialize the language switcher.
-        // This is crucial because the language switcher button is in the header.
+        // Once the HTML is included, initialize the components that are inside the header.
         initializeLanguageSwitcher();
+        initializeNavigation();
     });
 
     // --- CONSOLE EASTER EGG ---
