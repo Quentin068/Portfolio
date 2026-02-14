@@ -17,16 +17,16 @@
  */
 
 /* 1. Base Styles */
-@import url("base/_reset.css");
+@import url("./base/_reset.css");
 
 /* 2. Layout Styles */
-@import url("layout/_header.css");
-@import url("layout/_footer.css");
+@import url("./layout/_header.css");
+@import url("./layout/_footer.css");
 
 /* 3. Component Styles */
-@import url("components/_buttons.css");
-@import url("components/_cards.css");
-@import url("components/_terminal.css");
+@import url("./components/_buttons.css");
+@import url("./components/_cards.css");
+@import url("./components/_terminal.css");
 
 /* 4. Page-specific Styles */
-@import url("pages/_home.css");
+@import url("./pages/_home.css");
