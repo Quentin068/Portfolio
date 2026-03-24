@@ -7,6 +7,7 @@ export function initializeLanguageSwitcher() {
     // Default language is French.
     let currentLang = 'fr';
     const toggleBtn = document.getElementById('lang-toggle-btn');
+    const cvButton = document.getElementById('cv-button');
 
     // Ensure the toggle button exists before adding an event listener.
     if (toggleBtn) {
@@ -35,6 +36,11 @@ export function initializeLanguageSwitcher() {
                     el.innerHTML = el.dataset.fr;
                 }
             });
+
+            // Update the CV link based on the selected language.
+            if (cvButton) {
+                cvButton.href = `./assets/docs/CV_Mesnel-Terreau_Quentin_${currentLang}.pdf`;
+            }
 
             // Update the `lang` attribute of the <html> tag for accessibility and SEO.
             document.documentElement.lang = currentLang;
